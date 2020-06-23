@@ -4,6 +4,7 @@
 #include <iterator>
 #include <algorithm>
 #include "graphnode.hpp"
+#include <set>
 
 void addVertex(std::string vertex) {
 	if(vertex == null){}
@@ -124,4 +125,27 @@ void removeEdge(std::string vertex1, std::string vertex2) {
 	}
 }
 		
+std::set<std::string> getAllVertices() {
+	std:set<std::string> setString;
+	for (Graphnode node : allVertices) 
+		setString.insert(node.getData());
+	return setString;
 
+std::list<std::string> getAdjacentVerticesOf(std::string vertex) {
+	for (Graphnode node : allVertices)
+	{
+		if(node.getData().equals(vertex))
+		{
+			return node.getStringAdjacentVertex();
+		}
+	}
+	return null;
+}
+
+int size() {
+	return size;
+}
+
+int order() {
+	return order;
+}
