@@ -3,8 +3,11 @@
 #include <string>
 #include <iterator>
 #include <algorithm>
-#include "graphnode.hpp"
+#include "Graphnode.hpp"
 #include <set>
+
+Graph::Graph() {
+}
 
 void addVertex(std::string vertex) {
 	if(vertex == null){}
