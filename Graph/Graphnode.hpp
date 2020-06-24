@@ -8,7 +8,7 @@ class Graphnode{
 	std::list<Graphnode> adjacentVertices;
 public:
 
-	Graphnode();
+	Graphnode(std::string newData);
 	std:string getData();
 	void addAdjacentVertex(Graphnode newNode);
 	void removeAdjacentVertex(Graphnode removeNode);
